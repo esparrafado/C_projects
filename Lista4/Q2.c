@@ -10,7 +10,7 @@ int main(){
     scanf(" %c", &caractere);
 
     puts("Digite uma frase");
-    scanf(" %s", string);
+    fgets(string, sizeof(string), stdin);
 
     for(int i = 0; i < TAM; i++){
         if(string[i] == caractere && string[i] != '\0'){

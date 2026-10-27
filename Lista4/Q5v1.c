@@ -6,15 +6,14 @@ int main(){
     char stringb[TAM];
     
     puts("Escreva uma frase: ");
-    scanf(" %s", stringa);
+    fgets(stringa, sizeof(stinga), stdin);
 
     puts("Escreva outra frase: ");
-    scanf(" %s", stringb);
+    fgets(stringb, sizeof(stringb), stdin);
 
     for(int i = 0; i < TAM; i++){
         if(stringa[i] == '\0'){
             for(int k = 0; k < TAM; k++){
-                puts("a");
                 if(i + k < TAM){
                     stringa[i + k] = stringb[k];
                 }

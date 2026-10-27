@@ -15,10 +15,10 @@ int main(){
     }
 
     puts("Escreva uma frase: ");
-    scanf(" %s", stringa);
+    fgets(stringa, sizeof(stringa), stdin);
 
     puts("Escreva outra frase: ");
-    scanf(" %s", stringb);
+    fgets(stringb, sizeof(stringb), stdin);
 
     if(strcmp(pstringa, pstringb)){
         puts("As duas frases são diferentes");

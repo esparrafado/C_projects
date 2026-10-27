@@ -12,10 +12,10 @@ int main(){
     }
 
     puts("Escreva uma frase: ");
-    scanf(" %s", stringa);
+    fgets(stringa, sizeof(stringa), stdin);
 
     puts("Escreva outra frase: ");
-    scanf(" %s", stringb);
+    fgets(stringb, sizeof(stringb), stdin);
 
     for(int i = 0; i < TAM; i++){
         if(stringa[i] != stringb[i]){

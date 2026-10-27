@@ -9,10 +9,10 @@ int main(){
     char *pstringb = stringb;
     
     puts("Escreva uma frase: ");
-    scanf(" %s", stringa);
+    fgets(stringa, sizeof(stringa), stdin);
 
     puts("Escreva outra frase: ");
-    scanf(" %s", stringb);
+    fgets(stringb, sizeof(stringb), stdin);
 
     strcat(pstringa, pstringb);
 
